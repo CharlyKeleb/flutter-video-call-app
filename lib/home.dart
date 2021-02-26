@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
         onPageChanged: onPageChanged,
         children: [
           Menu(),
-    //      Profile(),
+          Profile(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -38,12 +38,12 @@ class _HomeState extends State<Home> {
             ),
             label: "Home",
           ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(
-          //     CupertinoIcons.person
-          //   ),
-          //   label: "Profile",
-          // ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              CupertinoIcons.person
+            ),
+            label: "Profile",
+          ),
         ],
         onTap: navigationTapped,
         currentIndex: _page,

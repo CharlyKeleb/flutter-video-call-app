@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Constants {
   //App related strings
@@ -16,7 +17,9 @@ class Constants {
   static Color darkBG = Color(0xff2B2B2B);
 
   static ThemeData lightTheme = ThemeData(
-    //fontFamily: 'Lato-Regular',
+    textTheme: TextTheme(
+      bodyText2: GoogleFonts.lato(),
+    ),
     backgroundColor: lightBG,
     primaryColor: lightPrimary,
     accentColor: lightAccent,
@@ -33,14 +36,12 @@ class Constants {
           color: Colors.black,
           fontSize: 20,
           fontWeight: FontWeight.w600,
-        //  fontFamily: 'Lato-Regular',
         ),
       ),
     ),
   );
 
   static ThemeData darkTheme = ThemeData(
-  //  fontFamily: 'Lato-Regular',
     brightness: Brightness.dark,
     backgroundColor: darkBG,
     primaryColor: darkPrimary,
@@ -54,7 +55,6 @@ class Constants {
           color: lightBG,
           fontSize: 20,
           fontWeight: FontWeight.w600,
-      //    fontFamily: 'Lato-Regular',
         ),
       ),
     ),
