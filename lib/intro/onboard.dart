@@ -104,7 +104,7 @@ class _OnboardState extends State<Onboard> with SingleTickerProviderStateMixin {
             bottom: 20,
             child: GestureDetector(
               onTap: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   CupertinoPageRoute(
                     builder: (context) {

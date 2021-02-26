@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_video_call/home.dart';
 import 'package:flutter_video_call/services/auth_service.dart';
 import 'package:flutter_video_call/utils/validations.dart';
-
 
 class LoginViewModel extends ChangeNotifier {
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
@@ -32,8 +32,8 @@ class LoginViewModel extends ChangeNotifier {
         );
         print(success);
         if (success) {
-          // Navigator.of(context).pushReplacement(
-          //     CupertinoPageRoute(builder: (_) => TabScreen()));
+          Navigator.of(context)
+              .pushReplacement(CupertinoPageRoute(builder: (_) => Home()));
         }
       } catch (e) {
         loading = false;

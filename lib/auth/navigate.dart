@@ -44,7 +44,7 @@ class _NavigateState extends State<Navigate> {
                   children: [
                     GestureDetector(
                       onTap: (){
-                        Navigator.push(
+                        Navigator.pushReplacement(
                           context,
                           CupertinoPageRoute(
                             builder: (_) => Login(),
@@ -77,7 +77,7 @@ class _NavigateState extends State<Navigate> {
                     SizedBox(height: 10.0),
                     GestureDetector(
                       onTap: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                           context,
                           CupertinoPageRoute(
                             builder: (_) => SignUp(),
